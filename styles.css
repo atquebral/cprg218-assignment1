@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+  }
+
+.header-container { 
+    background-color:#120323
+    
+}
+
+#container img{
+    float:left;
+    min-width: 1000px;
+}
