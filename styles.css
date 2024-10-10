@@ -19,27 +19,25 @@ main {
     padding:20px;
     align-items: center;
     width: 100%;
+    flex-direction: column;
 }
-
 
 #container img{
     display:flex;            
     float: none;
     max-width: 100%;
     border: 8px solid #d9043d;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 10%;
+    width: auto;
+    margin: 5%;
     
 }
 
 figcaption{
-    margin-bottom: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 5%;
 
     h2{
         padding-bottom: 5%;
+        padding-top: 5%;
     }
 
     p {
@@ -52,8 +50,6 @@ aside {
     background-color: #97bf04;
     max-width:100%;
     flex-direction: column;
-    
-    
     padding-left: 3%;
     padding-right: 3%;
     
@@ -73,26 +69,75 @@ footer {
     color:#ffffff; 
     font-size:medium;
     width:100%;
-    margin-top: 0;
     margin-bottom: 0;
+    
     justify-content:center;
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 3%;
     padding-bottom: 3%;
-    margin-top: 3%;
+    
 }
 
 
+@media screen and (min-width:768px) and (max-width:1000px) {
 
-@media screen and (max-width: 768px) {
     .header-container {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+
     }
 
-    #container img{         
+    figure { 
+        display: flex;
+        align-items: flex-start;
+        margin: 3%;
+        gap: 10px;
+    }
+
+    #container img {
+        max-width: 300px;
+        margin-left: 3%;
+        margin-right: 0%;
+    }
+
+    figcaption {
+        margin:0%;
+    }
+    
+}
+
+
+@media screen and (min-width:1000px) {
+    div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    figure { 
+        display: flex;
+        align-items: flex-start;
+        margin-top: 10%;
+    }
+    
+    #container img {
+        max-width: 300px;
+        margin-left: 3%;
+        margin-right: 0%;
+
+    }
+
+    figcaption {
+        margin-right: 0%;
+    }
+
+    aside {
+        margin-top: 10%;
+        margin-bottom: 10%;
         margin-left: 10%;
-        margin-right: 10%;
     }
-    }
+}
+   
+
